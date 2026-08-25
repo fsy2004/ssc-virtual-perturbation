@@ -1,0 +1,1105 @@
+{
+  "all_initial_bonded_penalty_terms": [
+    {
+      "atom_types": [
+        "NG2R50",
+        "CG2R51",
+        "NG2S1"
+      ],
+      "line_number": 13,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "N07",
+            "C31",
+            "N08"
+          ],
+          "cgenff_atom_names": [
+            "N4",
+            "C23",
+            "N5"
+          ]
+        }
+      ],
+      "penalty": 28.0,
+      "raw_line": "NG2R50 CG2R51 NG2S1    59.71    124.07 ! o6u , from NG2R50 CG2R53 NG2S1, penalty= 28",
+      "section": "angles"
+    },
+    {
+      "atom_types": [
+        "CG311",
+        "CG2O1",
+        "NG2S1",
+        "CG2R51"
+      ],
+      "line_number": 16,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C14",
+            "C24",
+            "N07",
+            "C31"
+          ],
+          "cgenff_atom_names": [
+            "C14",
+            "C8",
+            "N4",
+            "C23"
+          ]
+        }
+      ],
+      "penalty": 0.6,
+      "raw_line": "CG311  CG2O1  NG2S1  CG2R51     1.6000  1     0.00 ! o6u , from CG321 CG2O1 NG2S1 CG2R51, penalty= 0.6",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG311",
+        "CG2O1",
+        "NG2S1",
+        "CG2R51"
+      ],
+      "line_number": 17,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C14",
+            "C24",
+            "N07",
+            "C31"
+          ],
+          "cgenff_atom_names": [
+            "C14",
+            "C8",
+            "N4",
+            "C23"
+          ]
+        }
+      ],
+      "penalty": 0.6,
+      "raw_line": "CG311  CG2O1  NG2S1  CG2R51     2.5000  2   180.00 ! o6u , from CG321 CG2O1 NG2S1 CG2R51, penalty= 0.6",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2R51",
+        "CG2R51",
+        "CG2R51",
+        "NG2S1"
+      ],
+      "line_number": 18,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "N05",
+            "C27",
+            "C31",
+            "N07"
+          ],
+          "cgenff_atom_names": [
+            "N2",
+            "C20",
+            "C23",
+            "N4"
+          ]
+        }
+      ],
+      "penalty": 29.0,
+      "raw_line": "NG2R51 CG2R51 CG2R51 NG2S1      1.4400  2     0.00 ! o6u , from NG2R50 CG2R51 CG2R51 NG2R61, penalty= 29",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2S1",
+        "CG2R51",
+        "CG2R51",
+        "HGR52"
+      ],
+      "line_number": 19,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "H27",
+            "C27",
+            "C31",
+            "N07"
+          ],
+          "cgenff_atom_names": [
+            "H27",
+            "C20",
+            "C23",
+            "N4"
+          ]
+        }
+      ],
+      "penalty": 5.0,
+      "raw_line": "NG2S1  CG2R51 CG2R51 HGR52      1.1800  2   180.00 ! o6u , from NG2R61 CG2R51 CG2R51 HGR52, penalty= 5",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2S1",
+        "CG2R51",
+        "NG2R50",
+        "CG2R53"
+      ],
+      "line_number": 20,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C32",
+            "N08",
+            "C31",
+            "N07"
+          ],
+          "cgenff_atom_names": [
+            "C24",
+            "N5",
+            "C23",
+            "N4"
+          ]
+        }
+      ],
+      "penalty": 35.5,
+      "raw_line": "NG2S1  CG2R51 NG2R50 CG2R53     7.1500  2   180.00 ! o6u , from NG2R61 CG2R53 NG2R50 CG2R51, penalty= 35.5",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "HGR52",
+        "CG2R51",
+        "NG2R51",
+        "CG301"
+      ],
+      "line_number": 21,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C15",
+            "N05",
+            "C27",
+            "H27"
+          ],
+          "cgenff_atom_names": [
+            "C3",
+            "N2",
+            "C20",
+            "H27"
+          ]
+        }
+      ],
+      "penalty": 1.2,
+      "raw_line": "HGR52  CG2R51 NG2R51 CG301      0.0000  2   180.00 ! o6u , from HGR52 CG2R51 NG2R51 CG311, penalty= 1.2",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2R50",
+        "CG2R51",
+        "NG2S1",
+        "CG2O1"
+      ],
+      "line_number": 22,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C24",
+            "N07",
+            "C31",
+            "N08"
+          ],
+          "cgenff_atom_names": [
+            "C8",
+            "N4",
+            "C23",
+            "N5"
+          ]
+        }
+      ],
+      "penalty": 28.0,
+      "raw_line": "NG2R50 CG2R51 NG2S1  CG2O1      3.8700  1   180.00 ! o6u , from NG2R50 CG2R53 NG2S1 CG2O1, penalty= 28",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2R50",
+        "CG2R51",
+        "NG2S1",
+        "CG2O1"
+      ],
+      "line_number": 23,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C24",
+            "N07",
+            "C31",
+            "N08"
+          ],
+          "cgenff_atom_names": [
+            "C8",
+            "N4",
+            "C23",
+            "N5"
+          ]
+        }
+      ],
+      "penalty": 28.0,
+      "raw_line": "NG2R50 CG2R51 NG2S1  CG2O1      0.0000  2     0.00 ! o6u , from NG2R50 CG2R53 NG2S1 CG2O1, penalty= 28",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2R50",
+        "CG2R51",
+        "NG2S1",
+        "CG2O1"
+      ],
+      "line_number": 24,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C24",
+            "N07",
+            "C31",
+            "N08"
+          ],
+          "cgenff_atom_names": [
+            "C8",
+            "N4",
+            "C23",
+            "N5"
+          ]
+        }
+      ],
+      "penalty": 28.0,
+      "raw_line": "NG2R50 CG2R51 NG2S1  CG2O1      0.2200  3     0.00 ! o6u , from NG2R50 CG2R53 NG2S1 CG2O1, penalty= 28",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2R50",
+        "CG2R51",
+        "NG2S1",
+        "HGP1"
+      ],
+      "line_number": 25,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "H43",
+            "N07",
+            "C31",
+            "N08"
+          ],
+          "cgenff_atom_names": [
+            "H41",
+            "N4",
+            "C23",
+            "N5"
+          ]
+        }
+      ],
+      "penalty": 28.0,
+      "raw_line": "NG2R50 CG2R51 NG2S1  HGP1       0.6700  2     0.00 ! o6u , from NG2R50 CG2R53 NG2S1 HGP1, penalty= 28",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "HGR52",
+        "CG2R53",
+        "NG2R51",
+        "CG301"
+      ],
+      "line_number": 26,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C15",
+            "N05",
+            "C32",
+            "H34"
+          ],
+          "cgenff_atom_names": [
+            "C3",
+            "N2",
+            "C24",
+            "H34"
+          ]
+        }
+      ],
+      "penalty": 1.2,
+      "raw_line": "HGR52  CG2R53 NG2R51 CG301      0.0000  2   180.00 ! o6u , from HGR52 CG2R53 NG2R51 CG311, penalty= 1.2",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG2R66",
+        "CG2R61",
+        "CG321",
+        "CG311"
+      ],
+      "line_number": 27,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C09",
+            "C11",
+            "C13",
+            "C23"
+          ],
+          "cgenff_atom_names": [
+            "C11",
+            "C12",
+            "C2",
+            "C18"
+          ]
+        }
+      ],
+      "penalty": 1.5,
+      "raw_line": "CG2R66 CG2R61 CG321  CG311      0.2300  2   180.00 ! o6u , from CG2R66 CG2R61 CG321 CG331, penalty= 1.5",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG331",
+        "CG301",
+        "NG2R51",
+        "CG2R51"
+      ],
+      "line_number": 28,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C27",
+            "N05",
+            "C15",
+            "C21"
+          ],
+          "cgenff_atom_names": [
+            "C20",
+            "N2",
+            "C3",
+            "C6"
+          ]
+        },
+        {
+          "ccd_atom_ids": [
+            "C27",
+            "N05",
+            "C15",
+            "C22"
+          ],
+          "cgenff_atom_names": [
+            "C20",
+            "N2",
+            "C3",
+            "C7"
+          ]
+        }
+      ],
+      "penalty": 0.9,
+      "raw_line": "CG331  CG301  NG2R51 CG2R51     1.0400  1     0.00 ! o6u , from CG321 CG301 NG2R51 CG2R51, penalty= 0.9",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG331",
+        "CG301",
+        "NG2R51",
+        "CG2R51"
+      ],
+      "line_number": 29,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C27",
+            "N05",
+            "C15",
+            "C21"
+          ],
+          "cgenff_atom_names": [
+            "C20",
+            "N2",
+            "C3",
+            "C6"
+          ]
+        },
+        {
+          "ccd_atom_ids": [
+            "C27",
+            "N05",
+            "C15",
+            "C22"
+          ],
+          "cgenff_atom_names": [
+            "C20",
+            "N2",
+            "C3",
+            "C7"
+          ]
+        }
+      ],
+      "penalty": 0.9,
+      "raw_line": "CG331  CG301  NG2R51 CG2R51     0.3200  2   180.00 ! o6u , from CG321 CG301 NG2R51 CG2R51, penalty= 0.9",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG331",
+        "CG301",
+        "NG2R51",
+        "CG2R51"
+      ],
+      "line_number": 30,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C27",
+            "N05",
+            "C15",
+            "C21"
+          ],
+          "cgenff_atom_names": [
+            "C20",
+            "N2",
+            "C3",
+            "C6"
+          ]
+        },
+        {
+          "ccd_atom_ids": [
+            "C27",
+            "N05",
+            "C15",
+            "C22"
+          ],
+          "cgenff_atom_names": [
+            "C20",
+            "N2",
+            "C3",
+            "C7"
+          ]
+        }
+      ],
+      "penalty": 0.9,
+      "raw_line": "CG331  CG301  NG2R51 CG2R51     0.0800  3     0.00 ! o6u , from CG321 CG301 NG2R51 CG2R51, penalty= 0.9",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG331",
+        "CG301",
+        "NG2R51",
+        "CG2R51"
+      ],
+      "line_number": 31,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C27",
+            "N05",
+            "C15",
+            "C21"
+          ],
+          "cgenff_atom_names": [
+            "C20",
+            "N2",
+            "C3",
+            "C6"
+          ]
+        },
+        {
+          "ccd_atom_ids": [
+            "C27",
+            "N05",
+            "C15",
+            "C22"
+          ],
+          "cgenff_atom_names": [
+            "C20",
+            "N2",
+            "C3",
+            "C7"
+          ]
+        }
+      ],
+      "penalty": 0.9,
+      "raw_line": "CG331  CG301  NG2R51 CG2R51     0.0400  4   180.00 ! o6u , from CG321 CG301 NG2R51 CG2R51, penalty= 0.9",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG331",
+        "CG301",
+        "NG2R51",
+        "CG2R51"
+      ],
+      "line_number": 32,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C27",
+            "N05",
+            "C15",
+            "C21"
+          ],
+          "cgenff_atom_names": [
+            "C20",
+            "N2",
+            "C3",
+            "C6"
+          ]
+        },
+        {
+          "ccd_atom_ids": [
+            "C27",
+            "N05",
+            "C15",
+            "C22"
+          ],
+          "cgenff_atom_names": [
+            "C20",
+            "N2",
+            "C3",
+            "C7"
+          ]
+        }
+      ],
+      "penalty": 0.9,
+      "raw_line": "CG331  CG301  NG2R51 CG2R51     0.9100  6   180.00 ! o6u , from CG321 CG301 NG2R51 CG2R51, penalty= 0.9",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG2O1",
+        "CG311",
+        "NG311",
+        "CG311"
+      ],
+      "line_number": 33,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C09",
+            "N04",
+            "C14",
+            "C24"
+          ],
+          "cgenff_atom_names": [
+            "C11",
+            "N1",
+            "C14",
+            "C8"
+          ]
+        }
+      ],
+      "penalty": 0.6,
+      "raw_line": "CG2O1  CG311  NG311  CG311      2.0000  1     0.00 ! o6u , from CG2O1 CG311 NG311 CG321, penalty= 0.6",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG2O1",
+        "CG311",
+        "NG311",
+        "CG311"
+      ],
+      "line_number": 34,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C09",
+            "N04",
+            "C14",
+            "C24"
+          ],
+          "cgenff_atom_names": [
+            "C11",
+            "N1",
+            "C14",
+            "C8"
+          ]
+        }
+      ],
+      "penalty": 0.6,
+      "raw_line": "CG2O1  CG311  NG311  CG311      1.8000  2     0.00 ! o6u , from CG2O1 CG311 NG311 CG321, penalty= 0.6",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG2O1",
+        "CG311",
+        "NG311",
+        "CG311"
+      ],
+      "line_number": 35,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C09",
+            "N04",
+            "C14",
+            "C24"
+          ],
+          "cgenff_atom_names": [
+            "C11",
+            "N1",
+            "C14",
+            "C8"
+          ]
+        }
+      ],
+      "penalty": 0.6,
+      "raw_line": "CG2O1  CG311  NG311  CG311      0.5000  3     0.00 ! o6u , from CG2O1 CG311 NG311 CG321, penalty= 0.6",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG311",
+        "CG321",
+        "CG321",
+        "CG331"
+      ],
+      "line_number": 36,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C14",
+            "C19",
+            "C26",
+            "C35"
+          ],
+          "cgenff_atom_names": [
+            "C14",
+            "C17",
+            "C9",
+            "C27"
+          ]
+        }
+      ],
+      "penalty": 0.6,
+      "raw_line": "CG311  CG321  CG321  CG331      0.1505  2     0.00 ! o6u , from CG321 CG321 CG321 CG331, penalty= 0.6",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG311",
+        "CG321",
+        "CG321",
+        "CG331"
+      ],
+      "line_number": 37,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C14",
+            "C19",
+            "C26",
+            "C35"
+          ],
+          "cgenff_atom_names": [
+            "C14",
+            "C17",
+            "C9",
+            "C27"
+          ]
+        }
+      ],
+      "penalty": 0.6,
+      "raw_line": "CG311  CG321  CG321  CG331      0.0813  3   180.00 ! o6u , from CG321 CG321 CG321 CG331, penalty= 0.6",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG311",
+        "CG321",
+        "CG321",
+        "CG331"
+      ],
+      "line_number": 38,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C14",
+            "C19",
+            "C26",
+            "C35"
+          ],
+          "cgenff_atom_names": [
+            "C14",
+            "C17",
+            "C9",
+            "C27"
+          ]
+        }
+      ],
+      "penalty": 0.6,
+      "raw_line": "CG311  CG321  CG321  CG331      0.1082  4     0.00 ! o6u , from CG321 CG321 CG321 CG331, penalty= 0.6",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "CG311",
+        "CG321",
+        "CG321",
+        "CG331"
+      ],
+      "line_number": 39,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C14",
+            "C19",
+            "C26",
+            "C35"
+          ],
+          "cgenff_atom_names": [
+            "C14",
+            "C17",
+            "C9",
+            "C27"
+          ]
+        }
+      ],
+      "penalty": 0.6,
+      "raw_line": "CG311  CG321  CG321  CG331      0.2039  5     0.00 ! o6u , from CG321 CG321 CG321 CG331, penalty= 0.6",
+      "section": "dihedrals"
+    }
+  ],
+  "cgenff_program_version": "4.0",
+  "cgenff_topology_parameter_release": "5.0",
+  "checks": {
+    "all_parameter_terms_mapped_to_o6u": true,
+    "atom_count_76": true,
+    "bond_count_78": true,
+    "connectivity_exact": true,
+    "heavy_atom_count_35": true,
+    "hydrogen_count_41": true,
+    "partial_charge_vector_not_all_zero": true,
+    "topology_charge_within_0_0001_e": true
+  },
+  "computed_topology_charge_e": -0.0,
+  "coordinate_mapping": {
+    "maximum_heavy_atom_shift_angstrom": 0.2221395957500599,
+    "maximum_hydrogen_shift_angstrom": 1.086046960310649,
+    "maximum_ligand_reader_coordinate_shift_angstrom": 1.086046960310649,
+    "method": "immutable heavy-atom order plus exact graph consistency; regenerated hydrogens assigned within each mapped heavy-atom parent by minimum coordinate displacement",
+    "rms_ligand_reader_coordinate_shift_angstrom": 0.1759312440460163
+  },
+  "high_bonded_penalty_terms_above_10": [
+    {
+      "atom_types": [
+        "NG2R50",
+        "CG2R51",
+        "NG2S1"
+      ],
+      "line_number": 13,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "N07",
+            "C31",
+            "N08"
+          ],
+          "cgenff_atom_names": [
+            "N4",
+            "C23",
+            "N5"
+          ]
+        }
+      ],
+      "penalty": 28.0,
+      "raw_line": "NG2R50 CG2R51 NG2S1    59.71    124.07 ! o6u , from NG2R50 CG2R53 NG2S1, penalty= 28",
+      "section": "angles"
+    },
+    {
+      "atom_types": [
+        "NG2R51",
+        "CG2R51",
+        "CG2R51",
+        "NG2S1"
+      ],
+      "line_number": 18,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "N05",
+            "C27",
+            "C31",
+            "N07"
+          ],
+          "cgenff_atom_names": [
+            "N2",
+            "C20",
+            "C23",
+            "N4"
+          ]
+        }
+      ],
+      "penalty": 29.0,
+      "raw_line": "NG2R51 CG2R51 CG2R51 NG2S1      1.4400  2     0.00 ! o6u , from NG2R50 CG2R51 CG2R51 NG2R61, penalty= 29",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2S1",
+        "CG2R51",
+        "NG2R50",
+        "CG2R53"
+      ],
+      "line_number": 20,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C32",
+            "N08",
+            "C31",
+            "N07"
+          ],
+          "cgenff_atom_names": [
+            "C24",
+            "N5",
+            "C23",
+            "N4"
+          ]
+        }
+      ],
+      "penalty": 35.5,
+      "raw_line": "NG2S1  CG2R51 NG2R50 CG2R53     7.1500  2   180.00 ! o6u , from NG2R61 CG2R53 NG2R50 CG2R51, penalty= 35.5",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2R50",
+        "CG2R51",
+        "NG2S1",
+        "CG2O1"
+      ],
+      "line_number": 22,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C24",
+            "N07",
+            "C31",
+            "N08"
+          ],
+          "cgenff_atom_names": [
+            "C8",
+            "N4",
+            "C23",
+            "N5"
+          ]
+        }
+      ],
+      "penalty": 28.0,
+      "raw_line": "NG2R50 CG2R51 NG2S1  CG2O1      3.8700  1   180.00 ! o6u , from NG2R50 CG2R53 NG2S1 CG2O1, penalty= 28",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2R50",
+        "CG2R51",
+        "NG2S1",
+        "CG2O1"
+      ],
+      "line_number": 23,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C24",
+            "N07",
+            "C31",
+            "N08"
+          ],
+          "cgenff_atom_names": [
+            "C8",
+            "N4",
+            "C23",
+            "N5"
+          ]
+        }
+      ],
+      "penalty": 28.0,
+      "raw_line": "NG2R50 CG2R51 NG2S1  CG2O1      0.0000  2     0.00 ! o6u , from NG2R50 CG2R53 NG2S1 CG2O1, penalty= 28",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2R50",
+        "CG2R51",
+        "NG2S1",
+        "CG2O1"
+      ],
+      "line_number": 24,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "C24",
+            "N07",
+            "C31",
+            "N08"
+          ],
+          "cgenff_atom_names": [
+            "C8",
+            "N4",
+            "C23",
+            "N5"
+          ]
+        }
+      ],
+      "penalty": 28.0,
+      "raw_line": "NG2R50 CG2R51 NG2S1  CG2O1      0.2200  3     0.00 ! o6u , from NG2R50 CG2R53 NG2S1 CG2O1, penalty= 28",
+      "section": "dihedrals"
+    },
+    {
+      "atom_types": [
+        "NG2R50",
+        "CG2R51",
+        "NG2S1",
+        "HGP1"
+      ],
+      "line_number": 25,
+      "matched_o6u_terms": [
+        {
+          "ccd_atom_ids": [
+            "H43",
+            "N07",
+            "C31",
+            "N08"
+          ],
+          "cgenff_atom_names": [
+            "H41",
+            "N4",
+            "C23",
+            "N5"
+          ]
+        }
+      ],
+      "penalty": 28.0,
+      "raw_line": "NG2R50 CG2R51 NG2S1  HGP1       0.6700  2     0.00 ! o6u , from NG2R50 CG2R53 NG2S1 HGP1, penalty= 28",
+      "section": "dihedrals"
+    }
+  ],
+  "high_charge_penalty_atoms_above_10": [
+    {
+      "ccd_alt_atom_id": "C8",
+      "ccd_atom_id": "C24",
+      "cgenff_atom_name": "C8",
+      "cgenff_atom_type": "CG2O1",
+      "charge_e": 0.448,
+      "charge_penalty": 11.959,
+      "element": "C",
+      "ligand_reader_coordinate_shift_angstrom": 0.09510520490488414,
+      "ordinal": 8
+    },
+    {
+      "ccd_alt_atom_id": "C20",
+      "ccd_atom_id": "C27",
+      "cgenff_atom_name": "C20",
+      "cgenff_atom_type": "CG2R51",
+      "charge_e": 0.036,
+      "charge_penalty": 16.329,
+      "element": "C",
+      "ligand_reader_coordinate_shift_angstrom": 0.07085901495222756,
+      "ordinal": 20
+    },
+    {
+      "ccd_alt_atom_id": "C23",
+      "ccd_atom_id": "C31",
+      "cgenff_atom_name": "C23",
+      "cgenff_atom_type": "CG2R51",
+      "charge_e": 0.288,
+      "charge_penalty": 32.293,
+      "element": "C",
+      "ligand_reader_coordinate_shift_angstrom": 0.07447147104764357,
+      "ordinal": 23
+    },
+    {
+      "ccd_alt_atom_id": "C24",
+      "ccd_atom_id": "C32",
+      "cgenff_atom_name": "C24",
+      "cgenff_atom_type": "CG2R53",
+      "charge_e": 0.167,
+      "charge_penalty": 26.346,
+      "element": "C",
+      "ligand_reader_coordinate_shift_angstrom": 0.08991106717195604,
+      "ordinal": 24
+    },
+    {
+      "ccd_alt_atom_id": "N2",
+      "ccd_atom_id": "N05",
+      "cgenff_atom_name": "N2",
+      "cgenff_atom_type": "NG2R51",
+      "charge_e": -0.021,
+      "charge_penalty": 14.433,
+      "element": "N",
+      "ligand_reader_coordinate_shift_angstrom": 0.028930952282978904,
+      "ordinal": 31
+    },
+    {
+      "ccd_alt_atom_id": "N4",
+      "ccd_atom_id": "N07",
+      "cgenff_atom_name": "N4",
+      "cgenff_atom_type": "NG2S1",
+      "charge_e": -0.308,
+      "charge_penalty": 25.561,
+      "element": "N",
+      "ligand_reader_coordinate_shift_angstrom": 0.137669895038821,
+      "ordinal": 33
+    },
+    {
+      "ccd_alt_atom_id": "N5",
+      "ccd_atom_id": "N08",
+      "cgenff_atom_name": "N5",
+      "cgenff_atom_type": "NG2R50",
+      "charge_e": -0.735,
+      "charge_penalty": 32.824,
+      "element": "N",
+      "ligand_reader_coordinate_shift_angstrom": 0.1129690223025762,
+      "ordinal": 34
+    }
+  ],
+  "improper_terms": [
+    [
+      "C8",
+      "C14",
+      "N4",
+      "O"
+    ]
+  ],
+  "inputs": {
+    "inputs\\ligand_parameterization\\O6U_neutral_CCD_named_for_CGenFF.mol2": {
+      "bytes": 5424,
+      "sha256": "85d92a090c9972b879681fe548b2023067d6cf36e5043a96c885602be7ab815c"
+    },
+    "inputs\\ligand_parameterization\\O6U_preparameterization_atom_correspondence.tsv": {
+      "bytes": 4972,
+      "sha256": "a773708cf030ba03cdee924a51359b84810742fbce63b99cc95b8d6309e2eca3"
+    },
+    "server_records\\charmmgui_ligand_reader\\official_outputs\\ligandrm.pdb": {
+      "bytes": 6058,
+      "sha256": "33ae064817954275aff2b42dcfcf0597be6e15ce71d56cbec39267532c4434b7"
+    },
+    "server_records\\charmmgui_ligand_reader\\official_outputs\\o6u__o6u.prm": {
+      "bytes": 2991,
+      "sha256": "f39d01e48cb093c91bbc3e4081eb842e09f8bfaf6e5c08ae7e04dfff66fafdac"
+    },
+    "server_records\\charmmgui_ligand_reader\\official_outputs\\o6u__o6u.rtf": {
+      "bytes": 4589,
+      "sha256": "1cafc443b2b5a7c2b43a8ae1a5c4c5e6e8d0cfdb81971a0ba0c511a3664c1def"
+    }
+  },
+  "production_approved": false,
+  "release_boundary": "Initial CGenFF assignment only; high-penalty charges and bonded terms remain unvalidated.",
+  "schema_version": "1.0",
+  "status": "pass_initial_assignment_only_requires_targeted_qm_validation",
+  "summary": {
+    "declared_charge_e": 0.0,
+    "max_charge_penalty": 32.824,
+    "max_parameter_penalty": 35.5,
+    "residue": "o6u"
+  }
+}

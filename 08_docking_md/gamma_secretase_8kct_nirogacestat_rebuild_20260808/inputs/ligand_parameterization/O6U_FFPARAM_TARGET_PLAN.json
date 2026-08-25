@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "status": "draft_no_qm_target_generated",
+  "production_approved": false,
+  "component_id": "O6U",
+  "formal_charge_e": 0,
+  "software_execution_plan": {
+    "official_ffparam_distribution": "1.2.0",
+    "official_archive_sha256": "d9508f3a1590ba9fbfb1d048e832d6726ef6131fd40a70572f5662c5bdc2cbdb",
+    "ffparam_scope": "supported_CHARMM_additive_geometry_dipole_water_and_PES_operations",
+    "independent_engine_scope": "Psi4_and_OpenMM_Hessian_normal_mode_PED_and_headless_validation",
+    "reporting_guard": "Do not claim FFParam-v2 unless an official v2 distribution is obtained and hash-pinned."
+  },
+  "source_initial_assignment_audit": {
+    "path": "O6U_CGENFF_INITIAL_ASSIGNMENT_AUDIT.json",
+    "sha256": "e5094849fe6be4dccbd67cc1692b2c837eafdf042d0be456d2c608221823708c"
+  },
+  "source_atom_correspondence": {
+    "path": "O6U_CCD_CGENFF_ATOM_CORRESPONDENCE.tsv",
+    "sha256": "62b5a9500a0c5e0c2d85eb3fa51fb4e4cb82881dafd3d0b2b38f02231d6935f5"
+  },
+  "charge_fit": {
+    "mode": "coupled_whole_molecule_vector",
+    "targets": [
+      "HF_6-31Gd_applicable_water_interactions_with_CHARMM_neutral_scaling_and_distance_correction",
+      "MP2_6-31Gd_dipole",
+      "weakly_weighted_MP2_6-31Gd_electrostatic_potential_for_sites_not_constrained_by_water_probes"
+    ],
+    "constraints": [
+      "exact_integer_total_charge_zero",
+      "chemical_symmetry_where_applicable",
+      "whole_conformer_ensemble_consistency",
+      "penalty_weighted_restraint_toward_initial_CGenFF_charge_vector"
+    ],
+    "published_target_weights": {
+      "water_interaction_kcal_inverse_mol": 10.0,
+      "molecular_dipole_debye_inverse": 3.0,
+      "electrostatic_potential_kcal_inverse_mol_e_inverse": 1.0
+    },
+    "initial_charge_restraint_atom_weight": "1/(0.1 + CGenFF_charge_penalty)",
+    "esp_guard": "ESP is an auxiliary CHARMM additive fitting target and must not be converted into RESP or GAFF charges.",
+    "high_penalty_cluster": [
+      {"ccd_atom": "C24", "cgenff_atom": "C8", "penalty": 11.959},
+      {"ccd_atom": "C27", "cgenff_atom": "C20", "penalty": 16.329},
+      {"ccd_atom": "C31", "cgenff_atom": "C23", "penalty": 32.293},
+      {"ccd_atom": "C32", "cgenff_atom": "C24", "penalty": 26.346},
+      {"ccd_atom": "N05", "cgenff_atom": "N2", "penalty": 14.433},
+      {"ccd_atom": "N07", "cgenff_atom": "N4", "penalty": 25.561},
+      {"ccd_atom": "N08", "cgenff_atom": "N5", "penalty": 32.824}
+    ],
+    "forbidden_interpretation": "The seven atoms are one coupled heteroaromatic-amide charge region and are not seven independent charge-fitting variables."
+  },
+  "qm_conformer_filter": {
+    "heavy_atom_rmsd_angstrom_strictly_below": 0.1,
+    "absolute_energy_difference_kcal_mol_strictly_below": 0.1,
+    "duplicate_requires_both_criteria": true
+  },
+  "bonded_target_groups": [
+    {
+      "id": "angle_N07_C31_N08",
+      "initial_penalty": 28.0,
+      "ccd_atoms": ["N07", "C31", "N08"],
+      "target_type": "MP2_6-31Gd_geometry_Hessian_normal_modes_and_PED",
+      "scan_policy": "no_independent_torsion_scan"
+    },
+    {
+      "id": "stiff_double_bond_N05_C27_C31_N07",
+      "initial_penalty": 29.0,
+      "ccd_atoms": ["N05", "C27", "C31", "N07"],
+      "central_bond": ["C27", "C31"],
+      "central_bond_class": "double_bond",
+      "target_type": "stiff_local_MP2_6-31Gd_PES_near_accessible_minimum",
+      "scan_policy": "no_unconstrained_360_degree_free_rotor_scan"
+    },
+    {
+      "id": "ring_internal_C32_N08_C31_N07",
+      "initial_penalty": 35.5,
+      "ccd_atoms": ["C32", "N08", "C31", "N07"],
+      "central_bond": ["N08", "C31"],
+      "central_bond_class": "five_membered_ring_internal",
+      "target_type": "low_energy_ring_conformers_puckering_and_local_MP2_6-31Gd_PES",
+      "scan_policy": "no_unconstrained_360_degree_free_rotor_scan"
+    },
+    {
+      "id": "coupled_ring_conjugated_N07_C31",
+      "initial_penalty": 28.0,
+      "ccd_quartets": [
+        ["C24", "N07", "C31", "N08"],
+        ["H43", "N07", "C31", "N08"]
+      ],
+      "central_bond": ["N07", "C31"],
+      "central_bond_class": "ring_internal_conjugated",
+      "initial_parameter_lines": "three Fourier components for C24-N07-C31-N08 plus one H43-N07-C31-N08 term",
+      "target_type": "one_coupled_low_energy_ring_conformer_puckering_and_local_MP2_6-31Gd_PES_target",
+      "scan_policy": "do_not_treat_Fourier_components_or_quartets_as_independent_free_rotors"
+    }
+  ],
+  "release_requirements": [
+    "category classification confirmed in FFParam setup before QM generation",
+    "all converged and failed QM inputs and outputs retained",
+    "initial-versus-final parameter and charge change table retained",
+    "whole-target cross-validation retained",
+    "CHARMM-versus-GROMACS component regression retained",
+    "primary and independent reviewers sign the final parameter record"
+  ]
+}

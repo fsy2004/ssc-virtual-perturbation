@@ -1,0 +1,108 @@
+{
+  "audit_scope": "chemical identity, explicit hydrogens, stereochemistry, connectivity, and native heavy-atom correspondence only",
+  "identity": {
+    "component_id": "O6U",
+    "formal_charge": 0,
+    "formula": "C27H41F2N5O",
+    "formula_weight": 489.644,
+    "name": "Nirogacestat"
+  },
+  "inputs": {
+    "ccd": {
+      "bytes": 13369,
+      "path": "C:\\Users\\fsy\\Desktop\\SSc_project\\06_code_reproducibility\\08_docking_md\\gamma_secretase_8kct_nirogacestat_rebuild_20260808\\inputs\\reference\\O6U.cif",
+      "sha256": "c5c3c1ac73c9cb512612a855e39caddd9d840eaf823822f677c2675256659acd"
+    },
+    "hydrogen_complete_sdf": {
+      "bytes": 5284,
+      "path": "C:\\Users\\fsy\\Desktop\\SSc_project\\06_code_reproducibility\\08_docking_md\\gamma_secretase_8kct_nirogacestat_rebuild_20260808\\inputs\\reference\\O6U_ideal.sdf",
+      "sha256": "985ac8899eb97efff73a57682da4794fbe55acf06be25717f9d885d64cb5962a"
+    },
+    "native_structure": {
+      "bytes": 1179179,
+      "path": "C:\\Users\\fsy\\Desktop\\SSc_project\\06_code_reproducibility\\08_docking_md\\gamma_secretase_8kct_nirogacestat_rebuild_20260808\\inputs\\reference\\8KCT.cif",
+      "sha256": "2ed75442ca2c503a014b4e5e8bac67e107201c31776238d0ae94069b39013da9"
+    }
+  },
+  "md_parameterization_approved": false,
+  "native_structure_validation": {
+    "alternate_locations": [],
+    "chain": "B",
+    "component_id": "O6U",
+    "heavy_atom_count": 35,
+    "minimum_occupancy": 1.0,
+    "model_count": 1,
+    "pdb_id": "8KCT",
+    "residue_number": 502
+  },
+  "outputs": {
+    "atom_correspondence": {
+      "bytes": 4972,
+      "path": "C:\\Users\\fsy\\Desktop\\SSc_project\\06_code_reproducibility\\08_docking_md\\gamma_secretase_8kct_nirogacestat_rebuild_20260808\\inputs\\ligand_parameterization\\O6U_preparameterization_atom_correspondence.tsv",
+      "rows": 76,
+      "sha256": "a773708cf030ba03cdee924a51359b84810742fbce63b99cc95b8d6309e2eca3"
+    },
+    "parameterization_input_sdf": {
+      "bytes": 6742,
+      "explicit_3d": true,
+      "maximum_coordinate_change_from_official_sdf_angstrom": 0.0,
+      "path": "C:\\Users\\fsy\\Desktop\\SSc_project\\06_code_reproducibility\\08_docking_md\\gamma_secretase_8kct_nirogacestat_rebuild_20260808\\inputs\\ligand_parameterization\\O6U_neutral_hydrogen_complete_3D.sdf",
+      "sha256": "2cb9d769cde4157181a6199b83294cad56cade14ab34a5e86a6deb6790fc28d5",
+      "validated_identity": {
+        "assigned_chiral_centres_zero_based": [
+          [
+            10,
+            "S"
+          ],
+          [
+            13,
+            "S"
+          ]
+        ],
+        "atom_count": 76,
+        "bond_count": 78,
+        "canonical_isomeric_smiles": "CCC[C@H](N[C@H]1CCc2cc(F)cc(F)c2C1)C(=O)Nc1cn(C(C)(C)CNCC(C)(C)C)cn1",
+        "formal_charge": 0,
+        "formula": "C27H41F2N5O",
+        "heavy_atom_count": 35,
+        "hydrogen_count": 41,
+        "molecular_weight": 489.65499999999935
+      }
+    }
+  },
+  "overall_status": "local_identity_pass_parameterization_blocked",
+  "parameterization_blockers": [
+    "frozen CGenFF version and complete initial penalty inventory are absent",
+    "targeted FFParam/QM validation and final residual-penalty review are absent",
+    "final CHARMM atom types and partial charges are absent",
+    "CHARMM-to-GROMACS energy-component regression is absent",
+    "independent parameter and topology approvals are absent"
+  ],
+  "prohibited_inferences": [
+    "This audit does not validate any force-field parameter or partial charge.",
+    "The official SDF is not a production topology.",
+    "Blank CGenFF and GROMACS columns may not be filled without retained tool output and review."
+  ],
+  "schema_version": "1.0",
+  "sdf_validation": {
+    "assigned_chiral_centres_zero_based": [
+      [
+        10,
+        "S"
+      ],
+      [
+        13,
+        "S"
+      ]
+    ],
+    "atom_count": 76,
+    "bond_count": 78,
+    "canonical_isomeric_smiles": "CCC[C@H](N[C@H]1CCc2cc(F)cc(F)c2C1)C(=O)Nc1cn(C(C)(C)CNCC(C)(C)C)cn1",
+    "formal_charge": 0,
+    "formula": "C27H41F2N5O",
+    "heavy_atom_count": 35,
+    "hydrogen_count": 41,
+    "molecular_weight": 489.65499999999935
+  },
+  "study_id": "gamma_secretase_native_nirogacestat_rebuild_20260808"
+}

@@ -1,0 +1,275 @@
+{
+  "schema_version": "3.0",
+  "manifest_status": "draft_pending_artifact_binding",
+  "study_id": "gamma_secretase_native_nirogacestat_rebuild_20260808",
+  "frozen_at_utc": "TODO",
+  "design": {
+    "type": "single_native_holo_three_velocity_realizations",
+    "biochemical_system_count": 1,
+    "charmm_gui_construction_count": 1,
+    "realization_ids": [
+      "rep01",
+      "rep02",
+      "rep03"
+    ],
+    "realization_generation": "one_common_deterministic_minimization_then_distinct_first_nvt_velocity_seeds_and_independent_dynamic_equilibration",
+    "sampling_unit": "velocity_seeded_realization",
+    "comparative_inference_allowed": false,
+    "allowed_primary_contrasts": []
+  },
+  "global_model": {
+    "target_ph": 7.4,
+    "temperature_k": 303.15,
+    "pressure_bar": 1.0,
+    "salt": "NaCl",
+    "salt_molar": 0.15,
+    "membrane_upper": "POPC",
+    "membrane_lower": "POPC",
+    "resolved_native_lipids_retained": {
+      "CLR": 3,
+      "PC1": 2
+    },
+    "membrane_margin_angstrom": 20.0,
+    "water_distance_angstrom": 22.5,
+    "force_field_protein": "CHARMM36m",
+    "force_field_lipid": "CHARMM36",
+    "force_field_ligand": "CGenFF v5 compatible compound-specific O6U",
+    "water_model": "CHARMM TIP3P",
+    "nirogacestat_component_id": "O6U",
+    "nirogacestat_microstate": "neutral PDB chemical-component microstate",
+    "nirogacestat_formal_charge_e": 0,
+    "psen1_asp257_state": "deprotonated",
+    "psen1_asp385_state": "protonated_od2",
+    "dyad_rationale_record": {
+      "path": "PROTONATION_MODEL.md",
+      "sha256": "fcfc612a9dd6ae9c6dd2d382573ca224c47691384c01fbffa4efa8a7ece8c514"
+    }
+  },
+  "systems": [
+    {
+      "id": "8kct_nirogacestat_native",
+      "role": "native_inhibitor_bound_holo",
+      "pdb_id": "8KCT",
+      "entry_method": "cryo-EM",
+      "entry_resolution_angstrom": 2.6,
+      "ligand_component_id": "O6U",
+      "ligand_name": "nirogacestat",
+      "pose_provenance": "experimentally_resolved_heavy_atom_pose",
+      "structure_record": "TODO",
+      "ligand_parameter_record": "TODO",
+      "construction": {
+        "id": "build01",
+        "pdb_reader_jobid": "TODO",
+        "quick_bilayer_jobid": "TODO",
+        "clone_job": false,
+        "ppm_applied_once": true,
+        "membrane_orientation_record": {
+          "path": "TODO post-Quick-Bilayer PPM orientation record",
+          "sha256": "TODO"
+        },
+        "charmm_gui_archive": {
+          "path": "o6u_md_release_3x500ns_v4.tgz",
+          "sha256": "2ccb0bb0fcb9a98d1a58532a182abf804af9365cf0607b7fb63650c845b7f83d"
+        },
+        "gromacs_input_dir": "TODO extracted immutable GROMACS directory",
+        "gromacs_input_tree_manifest": {
+          "path": "TODO complete sorted file-hash manifest for extracted GROMACS directory",
+          "sha256": "TODO"
+        },
+        "starting_coordinates": {
+          "path": "common/step5_input.gro",
+          "sha256": "1b7ce0154587c2e0a20969e557cc7fb7a33947b70c0200097273259c190e4717"
+        },
+        "topology": {
+          "path": "common/topol.top",
+          "sha256": "d24c481c62f062ca8b778c3525c05319fc00a44a654d5379e7f73f3db23b13bc"
+        },
+        "index": {
+          "path": "common/index.ndx",
+          "sha256": "fe8e42d7b633907cf3b7264d39872dd29678e65251b63ada14f2fb64baf3aa49"
+        },
+        "analysis_index": {
+          "path": "builds/analysis.ndx",
+          "sha256": "0c5b58650756bfa18d6a2b00b3688b697f42f6e64ea267f6cdeceb44e132189e"
+        },
+        "production_mdp": {
+          "path": "rep01/production_500ns.mdp",
+          "sha256": "630c237973bd300cdf408976185500aedb5baef39f3e91b0bf0d92d9250ff792"
+        },
+        "minimization_mdp": {
+          "path": "TODO extracted gromacs/step6.0_minimization.mdp",
+          "sha256": "TODO"
+        },
+        "equilibration_mdp_sha256": {
+          "step6.1_equilibration.mdp": "TODO",
+          "step6.2_equilibration.mdp": "TODO",
+          "step6.3_equilibration.mdp": "TODO",
+          "step6.4_equilibration.mdp": "TODO",
+          "step6.5_equilibration.mdp": "TODO",
+          "step6.6_equilibration.mdp": "TODO"
+        },
+        "common_minimization_run_directory": "runs/8kct_nirogacestat_native/common_minimization",
+        "build_validation_report": {
+          "path": "TODO",
+          "sha256": "TODO"
+        },
+        "environment_validation_report": {
+          "path": "TODO exact server environment and tool validation report",
+          "sha256": "TODO"
+        },
+        "equilibration_validation_report": {
+          "path": "TODO strict all-realization equilibration validation report",
+          "sha256": "TODO"
+        },
+        "canary_validation_report": {
+          "path": "TODO strict all-realization 5 ns canary validation report",
+          "sha256": "TODO"
+        }
+      },
+      "realizations": [
+        {
+          "id": "rep01",
+          "velocity_seed": 26081601,
+          "thermostat_seed": 126081601,
+          "run_directory": "rep01"
+        },
+        {
+          "id": "rep02",
+          "velocity_seed": 26081602,
+          "thermostat_seed": 126081602,
+          "run_directory": "rep02"
+        },
+        {
+          "id": "rep03",
+          "velocity_seed": 26081603,
+          "thermostat_seed": 126081603,
+          "run_directory": "rep03"
+        }
+      ]
+    }
+  ],
+  "simulation": {
+    "engine": "GROMACS",
+    "required_version": "TODO exact server build and container digest",
+    "time_step_ps": 0.004,
+    "hydrogen_mass_repartitioning": true,
+    "constraints": "h-bonds",
+    "electrostatics": "PME",
+    "pressure_coupling": "semiisotropic",
+    "production_ns": 500.0,
+    "analysis_window_ns": [
+      200.0,
+      500.0
+    ],
+    "qc_and_stationarity_gate": {
+      "required_realization_ids": [
+        "rep01",
+        "rep02",
+        "rep03"
+      ],
+      "all_must_pass": true,
+      "failure_outcome": "analysis_inconclusive_fail_closed",
+      "trajectory_exclusion_allowed": false,
+      "analysis_cutoff_change_allowed": false
+    },
+    "maxwarn": 0,
+    "production_mdp_contract": {
+      "integrator": "md",
+      "thermostat": "v-rescale",
+      "thermostat_groups": [
+        "SOLU",
+        "MEMB",
+        "SOLV"
+      ],
+      "tau_t_ps": 1.0,
+      "barostat": "C-rescale",
+      "barostat_tau_p_ps": 5.0,
+      "compressibility_bar_inverse": [
+        4.5e-05,
+        4.5e-05
+      ],
+      "cutoff_scheme": "verlet",
+      "neighbor_list_update_steps": 20,
+      "rlist_nm": 1.2,
+      "rcoulomb_nm": 1.2,
+      "vdw_type": "cut-off",
+      "vdw_modifier": "force-switch",
+      "rvdw_switch_nm": 1.0,
+      "rvdw_nm": 1.2,
+      "dispersion_correction": "no",
+      "pme_order": 4,
+      "fourier_spacing_nm": 0.12,
+      "constraint_algorithm": "LINCS",
+      "com_removal_mode": "linear",
+      "com_removal_groups": [
+        "SOLU_MEMB",
+        "SOLV"
+      ],
+      "com_removal_interval_steps": 100,
+      "output_cadence_steps": {
+        "nstxout": 0,
+        "nstvout": 0,
+        "nstfout": 0,
+        "nstxout_compressed": 5000,
+        "nstcalcenergy": 100,
+        "nstenergy": 5000,
+        "nstlog": 5000,
+        "compressed_x_precision": 1000
+      }
+    },
+    "release_contract": {
+      "ordered_stages": [
+        "local_preflight",
+        "environment_validation",
+        "build_validation",
+        "common_minimization",
+        "three_independent_equilibrations",
+        "three_same_tpr_5ns_canaries",
+        "three_checkpoint_continuations_to_500ns"
+      ],
+      "canary_target_ns_per_realization": 5.0,
+      "canary_total_ns": 15.0,
+      "canary_uses_original_500ns_tpr": true,
+      "canary_frames_retained_as_production": true,
+      "canary_selection_uses_ligand_behavior": false,
+      "continuation_requires_all_three_canary_reports": true,
+      "continuation_uses_same_tpr_and_checkpoint": true,
+      "storage_budget_bytes": "TODO exact available server bytes recorded before canary",
+      "storage_headroom_fraction": 0.3,
+      "failure_policy": "technical_failure_blocks_release_without_replacing_or_selecting_realizations"
+    }
+  },
+  "analysis": {
+    "role": "descriptive_structural_stability_only",
+    "analysis_plan": {
+      "path": "TODO config/analysis_plan.json",
+      "contract_sha256": "TODO canonical analysis-plan contract SHA-256"
+    },
+    "analysis_plan_frozen_sha256": "TODO canonical analysis-plan contract SHA-256",
+    "pocket_fit_selection_record": "TODO",
+    "native_contact_definition_record": "TODO",
+    "bound_state_definition_record": "TODO",
+    "analysis_window_record": "TODO",
+    "pbc_distance_invariance_tolerance_nm": 0.01,
+    "frames_are_independent_units": false,
+    "between_system_statistics_allowed": false,
+    "endpoint_energy_calculations_allowed": false,
+    "pca_fel_role": "hard_prohibited",
+    "pca_enabled": false,
+    "occupancy_derived_fel_enabled": false,
+    "population_or_free_energy_surface_3d_enabled": false,
+    "pca_fel_scripts_are_rejection_stubs": true
+  },
+  "software": {
+    "environment_lock": "TODO",
+    "container_digest": "TODO",
+    "pymol_version": "3.1.1",
+    "plip_version": "TODO",
+    "mdanalysis_version": "TODO"
+  },
+  "protocol_record": {
+    "path": "config/production_protocol_hmr4fs_303K_v1.json",
+    "sha256": "53bcc22ea7e7660fff997e21cebb27c0b786e45a126e823959c817304b819b28",
+    "protocol_id": "8kct_o6u_hmr4fs_303K_three_replicates_500ns_v1"
+  }
+}

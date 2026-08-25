@@ -1,0 +1,37 @@
+# data & heavy objects (public data are downloaded separately)
+*.h5ad
+*.h5mu
+*.pkl
+*.parquet
+*.feather
+*.mtx
+*.RData
+*.rds
+*.xtc
+*.trr
+*.cpt
+*.tpr
+*.pdb
+*.gro
+data/
+raw/
+outs/
+# caches
+__pycache__/
+*.pyc
+.Rhistory
+.snakemake/
+*.log
+
+# runtime/record directories (not reproducible analysis code)
+server_runs/
+server_records/
+audit/
+analysis_config_work/
+reports/
+*.xvg
+*.edr
+*.cpt
+*.gro
+*.ndx
+*.txt.log

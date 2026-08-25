@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "report_type": "o6u_water_probe_disposition_policy",
+  "status": "pass",
+  "production_approved": false,
+  "component_id": "O6U",
+  "supersedes": {
+    "artifact": "server_runs/o6u_parameterization/water_probe_orientation_plan_20260811_v1/O6U_WATER_PROBE_ORIENTATION_PLAN.json",
+    "scope": "interpretation field only",
+    "reason": "The frozen 70-row file is an exhaustive orientation registry, not a requirement to execute every generated orientation as a QM target."
+  },
+  "sources": [
+    {
+      "path": "references/fulltext/ligand_parameterization/ffparam_manual/workflow.html",
+      "sha256": "ad9d954401f5979aefd3229757a7679cc55555f4278ea6b237d1ce3206272914",
+      "sections": ["fit-electrostatic-parameters", "create-qm-water-interaction-input-files"]
+    },
+    {
+      "path": "references/fulltext/ligand_parameterization/CGenFF_expanded_training_2025.fulltext.html",
+      "sha256": "daba668afe2871361da93099891e47a376feab5faeef828de32673fed3bb277e",
+      "sections": ["P18", "P74"]
+    },
+    {
+      "path": "LIGAND_PARAMETERIZATION_PROTOCOL.md",
+      "sha256": "b58b38c66c1d998323c2dc3cabac5b4de430d7e383065fa8f6fb3b2f712eac97",
+      "sections": ["CHARMM-compatible QM targets", "Fail-closed acceptance"]
+    }
+  ],
+  "rules": {
+    "registry": "All 70 generated orientations remain registered and receive a prospective signed disposition before fitting.",
+    "applicable": "Retain chemically applicable polar interactions selected for the charge-fit target set; a converged HF/6-31G(d) distance optimization and retained input/output are mandatory.",
+    "weak": "Use only for a converged evaluated interaction judged weak; retained HF/6-31G(d) input/output are mandatory and the interaction is not silently dropped.",
+    "unfavourable": "Use only for a converged evaluated interaction with an unfavourable QM interaction; retained HF/6-31G(d) input/output are mandatory and it is excluded from fitting with an explicit rationale.",
+    "excluded": "May be assigned before QM only for a source-supported nonpolar or unselected target, a steric clash, or unavoidable competing interaction. A retained visual or chemical review artifact is mandatory; QM artifacts must be absent.",
+    "failed_attempts": "All failed attempts are retained. A failed QM calculation cannot complete an applicable, weak, or unfavourable row and cannot enter the target set.",
+    "selection": "For multiple orientations at one non-hydrogen atom, retain orientations that maximize the intended atom interaction and minimize competing parent-molecule interactions, after visual steric review."
+  },
+  "allowed_qm_status_by_disposition": {
+    "applicable": ["pass"],
+    "weak": ["pass"],
+    "unfavourable": ["pass"],
+    "excluded": ["not_required_prespecified_exclusion"]
+  }
+}

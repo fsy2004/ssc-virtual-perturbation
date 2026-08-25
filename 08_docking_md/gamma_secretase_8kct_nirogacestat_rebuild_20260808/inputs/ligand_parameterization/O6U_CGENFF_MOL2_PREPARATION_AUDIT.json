@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "atom_count": 76,
+    "bond_count": 78,
+    "ccd_atom_names_and_order_exact": true,
+    "explicit_hydrogen_count": 41,
+    "formal_charge": 0,
+    "graph_and_formal_charges_exact": true,
+    "heavy_atom_count": 35,
+    "max_coordinate_change_angstrom": 0.0,
+    "openbabel_source_and_mol2_canonical_isomeric_smiles": "CCC[C@@H](C(=O)Nc1ncn(c1)C(CNCC(C)(C)C)(C)C)N[C@H]1CCc2c(C1)c(F)cc(c2)F",
+    "rdkit_source_canonical_isomeric_smiles": "CCC[C@H](N[C@H]1CCc2cc(F)cc(F)c2C1)C(=O)Nc1cn(C(C)(C)CNCC(C)(C)C)cn1",
+    "residue_name": "O6U"
+  },
+  "input_sdf": {
+    "path": "C:\\Users\\fsy\\Desktop\\SSc_project\\06_code_reproducibility\\08_docking_md\\gamma_secretase_8kct_nirogacestat_rebuild_20260808\\inputs\\ligand_parameterization\\O6U_neutral_hydrogen_complete_3D.sdf",
+    "sha256": "2cb9d769cde4157181a6199b83294cad56cade14ab34a5e86a6deb6790fc28d5"
+  },
+  "mapping_tsv": {
+    "path": "C:\\Users\\fsy\\Desktop\\SSc_project\\06_code_reproducibility\\08_docking_md\\gamma_secretase_8kct_nirogacestat_rebuild_20260808\\inputs\\ligand_parameterization\\O6U_preparameterization_atom_correspondence.tsv",
+    "sha256": "a773708cf030ba03cdee924a51359b84810742fbce63b99cc95b8d6309e2eca3"
+  },
+  "mol2_partial_charge_field": {
+    "interpretation": "transport-format values only; CGenFF must assign and report the force-field charges",
+    "sum": -0.0003000000000000483
+  },
+  "output_mol2": {
+    "path": "C:\\Users\\fsy\\Desktop\\SSc_project\\06_code_reproducibility\\08_docking_md\\gamma_secretase_8kct_nirogacestat_rebuild_20260808\\inputs\\ligand_parameterization\\O6U_neutral_CCD_named_for_CGenFF.mol2",
+    "sha256": "85d92a090c9972b879681fe548b2023067d6cf36e5043a96c885602be7ab815c"
+  },
+  "release_boundary": "This MOL2 audit does not approve CGenFF penalties, QM targets, fitted parameters, or MD use.",
+  "schema_version": 1,
+  "software": {
+    "openbabel": "3.1.0",
+    "rdkit": "2026.03.3"
+  },
+  "status": "pass_for_initial_cgenff_submission_only"
+}

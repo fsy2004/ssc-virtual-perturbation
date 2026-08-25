@@ -1,0 +1,51 @@
+; Frozen CHARMM36m/CHARMM36 production contract.
+; Replace the tc-grps line only with the exact reviewed CHARMM-GUI coupling
+; groups, copy those names into study_manifest.json, then hash/freeze this file.
+integrator               = md
+dt                       = 0.002
+nsteps                   = 250000000
+continuation             = yes
+gen-vel                  = no
+pbc                      = xyz
+periodic-molecules       = no
+mass-repartition-factor  = 1.0
+
+cutoff-scheme            = Verlet
+nstlist                  = 20
+rlist                    = 1.2
+coulombtype              = PME
+rcoulomb                 = 1.2
+pme-order                = 4
+fourierspacing           = 0.12
+vdwtype                  = Cut-off
+vdw-modifier             = Force-switch
+rvdw-switch              = 1.0
+rvdw                     = 1.2
+DispCorr                 = no
+
+constraints              = h-bonds
+constraint-algorithm     = lincs
+
+tcoupl                   = Nose-Hoover
+tc-grps                  = TODO_EXACT_REVIEWED_CHARMM_GUI_GROUPS
+tau-t                    = TODO_ONE_1.0_PER_TC_GROUP
+ref-t                    = TODO_ONE_310.15_PER_TC_GROUP
+
+pcoupl                   = Parrinello-Rahman
+pcoupltype               = semiisotropic
+tau-p                    = 5.0
+ref-p                    = 1.0 1.0
+compressibility          = 4.5e-5 4.5e-5
+
+comm-mode                = linear
+comm-grps                = System
+nstcomm                  = 100
+
+nstxout                  = 0
+nstvout                  = 0
+nstfout                  = 0
+nstxout-compressed       = 50000
+compressed-x-precision   = 1000
+nstcalcenergy            = 100
+nstenergy                = 5000
+nstlog                   = 5000

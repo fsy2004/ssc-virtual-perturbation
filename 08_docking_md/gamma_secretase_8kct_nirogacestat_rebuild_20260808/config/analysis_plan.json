@@ -1,0 +1,130 @@
+{
+  "schema_version": "2.0",
+  "analysis_status": "draft_pending_qc_and_trajectory_binding",
+  "study_id": "gamma_secretase_native_nirogacestat_rebuild_20260808",
+  "analysis_id": "primary_fixed_window_trajectory_processing",
+  "enabled": false,
+  "role": "primary_fixed_window_trajectory_processing_only",
+  "random_seed": 20260808,
+  "temperature_k": 303.15,
+  "system": {
+    "id": "8kct_nirogacestat_native",
+    "label": "Native 8KCT nirogacestat-bound gamma-secretase"
+  },
+  "realization_ids": [
+    "rep01",
+    "rep02",
+    "rep03"
+  ],
+  "analysis_window_ns": [
+    200.0,
+    500.0
+  ],
+  "eligibility_gate": {
+    "required_realization_ids": [
+      "rep01",
+      "rep02",
+      "rep03"
+    ],
+    "all_realizations_passed_qc_and_stationarity": false,
+    "failure_policy": "inconclusive_if_any_realization_fails_qc_or_stationarity",
+    "qc_and_stationarity_report_sha256": "TODO_BIND_AFTER_SEALING"
+  },
+  "inference_contract": {
+    "frames_are_independent_units": false,
+    "realizations_are_used_for_descriptive_sampling_support_only": true,
+    "hypothesis_tests": false,
+    "confidence_intervals": false,
+    "between_system_comparisons": false,
+    "endpoint_energy_calculations": false
+  },
+  "prohibited_analyses": {
+    "pca": true,
+    "occupancy_derived_minus_kbt_ln_p": true,
+    "free_energy_landscape": true,
+    "population_or_free_energy_surface_3d": true,
+    "policy": "hard_prohibited_no_supplementary_exception"
+  },
+  "input_contract": {
+    "arrays_are_final_fitted_selection": true,
+    "fit_selection_id": "PSEN1_Core_13_contact_CA",
+    "atom_selection_id": "Protein_O6U_20867",
+    "time_array_key": "time_ns",
+    "no_frame_smoothing": true,
+    "no_frame_removal_within_fixed_window": true,
+    "no_interpolation": true,
+    "common_feature_order_across_realizations": true
+  },
+  "trajectory_processing": {
+    "ordered_steps": [
+      "whole",
+      "cluster_complex_if_required",
+      "processed_first_frame_reference",
+      "nojump",
+      "center_and_rebox",
+      "fit_analysis_selection",
+      "fixed_window_extract"
+    ],
+    "cluster_complex_required": true,
+    "fixed_window_ns": [
+      200.0,
+      500.0
+    ],
+    "no_frame_removal_within_fixed_window": true,
+    "no_smoothing": true,
+    "no_interpolation": true,
+    "groups": {
+      "system": "System",
+      "complex": "Protein_O6U",
+      "fit": "PSEN1_Core",
+      "analysis_output": "Protein_O6U",
+      "pbc_invariance_protein_heavy": "Protein_Heavy",
+      "pbc_invariance_ligand_heavy": "O6U_Heavy"
+    },
+    "pbc_distance_invariance_tolerance_nm": 0.01,
+    "snapshot_times_ns": [
+      200.0,
+      350.0,
+      500.0
+    ]
+  },
+  "inputs": [
+    {
+      "system_id": "8kct_nirogacestat_native",
+      "realization_id": "rep01",
+      "path": "TODO_REP01_ARRAY_PATH.npz",
+      "array_key": "coordinates",
+      "time_key": "time_ns",
+      "kind": "coordinates",
+      "fit_selection_id": "TODO_FROZEN_FIT_SELECTION_ID",
+      "atom_selection_id": "TODO_FROZEN_ATOM_SELECTION_ID"
+    },
+    {
+      "system_id": "8kct_nirogacestat_native",
+      "realization_id": "rep02",
+      "path": "TODO_REP02_ARRAY_PATH.npz",
+      "array_key": "coordinates",
+      "time_key": "time_ns",
+      "kind": "coordinates",
+      "fit_selection_id": "TODO_FROZEN_FIT_SELECTION_ID",
+      "atom_selection_id": "TODO_FROZEN_ATOM_SELECTION_ID"
+    },
+    {
+      "system_id": "8kct_nirogacestat_native",
+      "realization_id": "rep03",
+      "path": "TODO_REP03_ARRAY_PATH.npz",
+      "array_key": "coordinates",
+      "time_key": "time_ns",
+      "kind": "coordinates",
+      "fit_selection_id": "TODO_FROZEN_FIT_SELECTION_ID",
+      "atom_selection_id": "TODO_FROZEN_ATOM_SELECTION_ID"
+    }
+  ],
+  "outputs": {
+    "write_processed_trajectory_provenance": true,
+    "write_pbc_distance_invariance_report": true,
+    "pca_outputs": false,
+    "fel_outputs": false,
+    "population_or_free_energy_surface_3d_outputs": false
+  }
+}

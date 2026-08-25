@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "approval_status": "approved",
+  "gromacs_time_unit": "ps",
+  "selection_mode": "one_exact_named_term_per_gmx_energy_invocation",
+  "terms": [
+    {
+      "key": "temperature_k",
+      "gmx_name": "Temperature",
+      "unit": "K",
+      "required": true
+    },
+    {
+      "key": "pressure_bar",
+      "gmx_name": "Pressure",
+      "unit": "bar",
+      "required": true
+    },
+    {
+      "key": "pressure_xx_bar",
+      "gmx_name": "Pres-XX",
+      "unit": "bar",
+      "required": true
+    },
+    {
+      "key": "pressure_yy_bar",
+      "gmx_name": "Pres-YY",
+      "unit": "bar",
+      "required": true
+    },
+    {
+      "key": "pressure_zz_bar",
+      "gmx_name": "Pres-ZZ",
+      "unit": "bar",
+      "required": true
+    },
+    {
+      "key": "pressure_xy_bar",
+      "gmx_name": "Pres-XY",
+      "unit": "bar",
+      "required": true
+    },
+    {
+      "key": "pressure_xz_bar",
+      "gmx_name": "Pres-XZ",
+      "unit": "bar",
+      "required": true
+    },
+    {
+      "key": "pressure_yz_bar",
+      "gmx_name": "Pres-YZ",
+      "unit": "bar",
+      "required": true
+    },
+    {
+      "key": "potential_energy_kj_mol",
+      "gmx_name": "Potential",
+      "unit": "kJ/mol",
+      "required": true
+    },
+    {
+      "key": "kinetic_energy_kj_mol",
+      "gmx_name": "Kinetic-En.",
+      "unit": "kJ/mol",
+      "required": true
+    },
+    {
+      "key": "total_energy_kj_mol",
+      "gmx_name": "Total-Energy",
+      "unit": "kJ/mol",
+      "required": true
+    },
+    {
+      "key": "density_kg_m3",
+      "gmx_name": "Density",
+      "unit": "kg/m^3",
+      "required": true
+    },
+    {
+      "key": "volume_nm3",
+      "gmx_name": "Volume",
+      "unit": "nm^3",
+      "required": true
+    },
+    {
+      "key": "box_x_nm",
+      "gmx_name": "Box-X",
+      "unit": "nm",
+      "required": true
+    },
+    {
+      "key": "box_y_nm",
+      "gmx_name": "Box-Y",
+      "unit": "nm",
+      "required": true
+    },
+    {
+      "key": "box_z_nm",
+      "gmx_name": "Box-Z",
+      "unit": "nm",
+      "required": true
+    }
+  ],
+  "source_template_sha256": "90d3df322d23e36debdc7188262909a1ffe01354bfa3df1f90f3415162d0eebe",
+  "production_protocol_sha256": "53bcc22ea7e7660fff997e21cebb27c0b786e45a126e823959c817304b819b28",
+  "gromacs_energy_cadence_steps": 5000,
+  "energy_interval_ps": 20.0,
+  "gromacs_build": "GROMACS 2025.2 (production node; identity captured server-side)",
+  "formal_validation": {
+    "status": "pass",
+    "production_edr": {
+      "path": "/root/autodl-tmp/o6u_md_release_3x500ns_v4/rep01/work/production.edr",
+      "sha256": "e48820a9ad422e9dea432d83143374aeea54e83d692b3dbdc8bbc83304d9e8f7"
+    },
+    "gromacs_version_capture": {
+      "path": "/root/autodl-tmp/o6u_md_release_3x500ns_v4/audit/energy_term_inventory/gmx_version.txt",
+      "sha256": "f061c0e3928036cf518f717ddef214bcbafab3341d009b0e50604614d38acd8f"
+    },
+    "gromacs_energy_menu": {
+      "path": "/root/autodl-tmp/o6u_md_release_3x500ns_v4/audit/energy_term_inventory/gmx_energy_menu.stderr",
+      "sha256": "7d5a26ded8f1c17b56050439ff1e3a846b5b2d6cf0d7f92689f82dc35f47763e",
+      "available_terms": {
+        "1": "Bond",
+        "2": "U-B",
+        "3": "Proper-Dih.",
+        "4": "Improper-Dih.",
+        "5": "CMAP-Dih.",
+        "6": "LJ-14",
+        "7": "Coulomb-14",
+        "8": "LJ-(SR)",
+        "9": "Coulomb-(SR)",
+        "10": "Coul.-recip.",
+        "11": "Potential",
+        "12": "Kinetic-En.",
+        "13": "Total-Energy",
+        "14": "Conserved-En.",
+        "15": "Temperature",
+        "16": "Pressure",
+        "17": "Constr.-rmsd",
+        "18": "Box-X",
+        "19": "Box-Y",
+        "20": "Box-Z",
+        "21": "Volume",
+        "22": "Density",
+        "23": "pV",
+        "24": "Enthalpy",
+        "25": "Vir-XX",
+        "26": "Vir-XY",
+        "27": "Vir-XZ",
+        "28": "Vir-YX",
+        "29": "Vir-YY",
+        "30": "Vir-YZ",
+        "31": "Vir-ZX",
+        "32": "Vir-ZY",
+        "33": "Vir-ZZ",
+        "34": "Pres-XX",
+        "35": "Pres-XY",
+        "36": "Pres-XZ",
+        "37": "Pres-YX",
+        "38": "Pres-YY",
+        "39": "Pres-YZ",
+        "40": "Pres-ZX",
+        "41": "Pres-ZY",
+        "42": "Pres-ZZ",
+        "43": "#Surf*SurfTen",
+        "44": "T-SOLU",
+        "45": "T-MEMB",
+        "46": "T-SOLV",
+        "47": "Lamb-SOLU",
+        "48": "Lamb-MEMB",
+        "49": "Lamb-SOLV"
+      }
+    },
+    "required_terms_present_exactly": [
+      "Temperature",
+      "Pressure",
+      "Pres-XX",
+      "Pres-YY",
+      "Pres-ZZ",
+      "Pres-XY",
+      "Pres-XZ",
+      "Pres-YZ",
+      "Potential",
+      "Kinetic-En.",
+      "Total-Energy",
+      "Density",
+      "Volume",
+      "Box-X",
+      "Box-Y",
+      "Box-Z"
+    ],
+    "validated_at_utc": "2026-08-22T07:40:05.755805+00:00"
+  }
+}

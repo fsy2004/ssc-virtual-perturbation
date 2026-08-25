@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "status": "frozen_before_endpoint_energy_results",
+  "supplement": "SECONDARY_ENDPOINT_ENERGY_EXECUTION_SUPPLEMENT_20260820.md",
+  "software": {
+    "gmx_mmpbsa_version": "1.6.5",
+    "gmx_mmpbsa_git_commit": "64e994c71aaff315f3c82dd0852919aecb1ab62e",
+    "python": "3.11.8",
+    "ambertools": "23.3",
+    "gromacs": "2023.4",
+    "pbradii": 7,
+    "openmpi": "4.1.6",
+    "parmed": "4.3.0"
+  },
+  "pb_numerical": {
+    "radiopt": 0,
+    "fillratio": 1.25,
+    "inp": 2,
+    "sasopt": 0,
+    "solvopt": 2,
+    "ipb": 1,
+    "bcopt": 10,
+    "nfocus": 1,
+    "linit": 1000,
+    "eneopt": 1,
+    "cutfd": 7.0,
+    "cutnb": 99.0,
+    "maxarcdot": 15000,
+    "npbverb": 1
+  },
+  "decomposition": {
+    "idecomp": 2,
+    "dec_verbose": 0,
+    "csv_format": 1,
+    "print_res": "B/261,268,272,282,287,380-381,431-432,502",
+    "protein_residues": ["B:VAL:261", "B:LEU:268", "B:VAL:272", "B:LEU:282", "B:ILE:287", "B:LYS:380", "B:LEU:381", "B:ALA:431", "B:LEU:432"],
+    "ligand_residue": "B:O6U:502",
+    "normalized_plip_contact_record": "docking_native_redock/figures/native_8kct_o6u/8KCT_O6U_native_contacts.interactions.normalized.json",
+    "normalized_plip_contact_record_sha256": "69c57604a13cb454ee55bd98b4614eefaac0527fc0a2636351393aefb874969d",
+    "descriptive_only": true,
+    "data_driven_residue_ranking": false
+  }
+}

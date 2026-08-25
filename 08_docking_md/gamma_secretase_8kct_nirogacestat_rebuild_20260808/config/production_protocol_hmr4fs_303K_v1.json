@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "8kct_o6u_hmr4fs_303K_three_replicates_500ns_v1",
+  "frozen_before_production": true,
+  "decision_date": "2026-08-16",
+  "system": {
+    "identity": "native human gamma-secretase 8KCT with native O6U nirogacestat",
+    "ffconverter_job": "8687168316",
+    "archive_bytes": 283445163,
+    "archive_sha256": "2ccb0bb0fcb9a98d1a58532a182abf804af9365cf0607b7fb63650c845b7f83d",
+    "atom_count": 330583,
+    "o6u_atom_count": 76,
+    "o6u_net_charge": 0,
+    "o6u_rtf_canonical_lf_sha256": "55c9751cb727822ec6da774ef18d926bdca257cd4a6f9c8486aa1e849866b1e5",
+    "o6u_prm_canonical_lf_sha256": "f39d01e48cb093c91bbc3e4081eb842e09f8bfaf6e5c08ae7e04dfff66fafdac",
+    "step5_input_gro_sha256": "1b7ce0154587c2e0a20969e557cc7fb7a33947b70c0200097273259c190e4717",
+    "minimized_gro_sha256": "394b53a9754dd380925f281f8f0aa013b9ea38ca9261340c132bebdf8d836829"
+  },
+  "force_field": {
+    "protein": "CHARMM36m",
+    "lipids": "CHARMM36",
+    "ligand": "CGenFF v5 compatible compound-specific O6U",
+    "water": "CHARMM TIP3P",
+    "hydrogen_mass_repartitioning": true
+  },
+  "ensemble": {
+    "integrator": "md",
+    "production_time_step_ps": 0.004,
+    "temperature_K": 303.15,
+    "thermostat": "v-rescale",
+    "temperature_groups": ["SOLU", "MEMB", "SOLV"],
+    "barostat": "C-rescale",
+    "pressure_coupling": "semiisotropic",
+    "pressure_bar": [1.0, 1.0],
+    "constraints": "h-bonds",
+    "constraint_algorithm": "LINCS",
+    "electrostatics": "PME",
+    "vdw": "CHARMM force-switch 1.0-1.2 nm"
+  },
+  "production": {
+    "realization_count": 3,
+    "duration_ns_per_realization": 500.0,
+    "steps_per_realization": 125000000,
+    "trajectory_interval_ps": 20.0,
+    "energy_interval_ps": 20.0,
+    "log_interval_ps": 20.0,
+    "continuation": true,
+    "generate_velocities": false,
+    "restart_policy": "continue from the exact latest checkpoint with -cpi and -append"
+  },
+  "realizations": [
+    {"id": "rep01", "velocity_seed": 26081601, "thermostat_seed": 126081601},
+    {"id": "rep02", "velocity_seed": 26081602, "thermostat_seed": 126081602},
+    {"id": "rep03", "velocity_seed": 26081603, "thermostat_seed": 126081603}
+  ],
+  "branching": {
+    "common_state": "the same independently validated minimized membrane system",
+    "first_distinct_stage": "step6.1_equilibration",
+    "later_stages": "checkpoint continuation through step6.6 and production",
+    "interpretation": "three independently velocity-seeded realizations, not three membrane builds or biological replicates"
+  },
+  "jump_prevention": {
+    "dynamics": "never regenerate velocities at production start; preserve velocities and coupling state through checkpoints",
+    "raw_trajectory": "immutable",
+    "analysis_order": [
+      "whole",
+      "cluster_complex_if_required",
+      "processed_first_frame_reference",
+      "nojump",
+      "center_and_rebox",
+      "fit_analysis_selection"
+    ],
+    "pbc_minimum_image_invariance_tolerance_nm": 0.01,
+    "physical_transition_policy": "events persisting after validated PBC reconstruction remain scientific observations"
+  },
+  "excluded": [
+    "MM/GBSA",
+    "MM/PBSA",
+    "docking-score inference",
+    "affinity inference",
+    "efficacy inference",
+    "outcome-dependent seed replacement"
+  ]
+}

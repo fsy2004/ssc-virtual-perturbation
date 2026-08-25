@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "style_name": "gamma_secretase_plip_okabe_ito_v1",
+  "palette_name": "Okabe-Ito",
+  "display_all_plip_contacts": true,
+  "background": "#FFFFFF",
+  "palette": {
+    "black": "#000000",
+    "orange": "#E69F00",
+    "sky_blue": "#56B4E9",
+    "bluish_green": "#009E73",
+    "yellow": "#F0E442",
+    "blue": "#0072B2",
+    "vermillion": "#D55E00",
+    "reddish_purple": "#CC79A7"
+  },
+  "structure": {
+    "protein_cartoon_color": "#B8B8B8",
+    "subunit_colors": {
+      "A": "#009E73",
+      "B": "#0072B2",
+      "C": "#E69F00",
+      "D": "#D55E00"
+    },
+    "pocket_carbon_color": "#666666",
+    "ligand_carbon_color": "#CC79A7",
+    "oxygen_color": "#D55E00",
+    "nitrogen_color": "#0072B2",
+    "sulfur_color": "#F0E442",
+    "halogen_color": "#009E73",
+    "protein_cartoon_transparency": 0.68,
+    "pocket_radius_angstrom": 5.0,
+    "stick_radius": 0.22,
+    "endpoint_sphere_scale": 0.11
+  },
+  "interaction_styles": {
+    "hydrogen_bond": {
+      "color": "#0072B2",
+      "pattern_name": "short_dash",
+      "dash_gap": 0.12,
+      "dash_length": 0.20,
+      "dash_width": 3.2
+    },
+    "hydrophobic_interaction": {
+      "color": "#000000",
+      "pattern_name": "dot",
+      "dash_gap": 0.06,
+      "dash_length": 0.34,
+      "dash_width": 2.2
+    },
+    "pi_stack": {
+      "color": "#009E73",
+      "pattern_name": "long_dash",
+      "dash_gap": 0.28,
+      "dash_length": 0.10,
+      "dash_width": 3.0
+    },
+    "pi_cation_interaction": {
+      "color": "#E69F00",
+      "pattern_name": "medium_dash",
+      "dash_gap": 0.20,
+      "dash_length": 0.18,
+      "dash_width": 3.0
+    },
+    "salt_bridge": {
+      "color": "#D55E00",
+      "pattern_name": "dash_dot",
+      "dash_gap": 0.16,
+      "dash_length": 0.27,
+      "dash_width": 3.4
+    },
+    "water_bridge": {
+      "color": "#56B4E9",
+      "pattern_name": "fine_dash",
+      "dash_gap": 0.09,
+      "dash_length": 0.14,
+      "dash_width": 2.8
+    },
+    "halogen_bond": {
+      "color": "#CC79A7",
+      "pattern_name": "wide_gap",
+      "dash_gap": 0.24,
+      "dash_length": 0.30,
+      "dash_width": 3.0
+    },
+    "metal_complex": {
+      "color": "#F0E442",
+      "pattern_name": "heavy_dot",
+      "dash_gap": 0.08,
+      "dash_length": 0.42,
+      "dash_width": 4.0
+    }
+  },
+  "labels": {
+    "font_id": 7,
+    "point_size": 70,
+    "color": "#000000",
+    "outline_color": "#FFFFFF",
+    "max_residue_labels": 2,
+    "provenance_point_size": 85,
+    "provenance_offset_angstrom": [0.0, 10.0, 0.0]
+  },
+  "camera": {
+    "mode": "deterministic_orient_then_zoom",
+    "zoom_buffer_angstrom": 8.0,
+    "orthoscopic": true
+  },
+  "render": {
+    "dpi": 600,
+    "width_cm": 16.0,
+    "height_cm": 12.0,
+    "ray_trace": true,
+    "antialias": 2,
+    "ray_shadows": false,
+    "opaque_background": true
+  }
+}

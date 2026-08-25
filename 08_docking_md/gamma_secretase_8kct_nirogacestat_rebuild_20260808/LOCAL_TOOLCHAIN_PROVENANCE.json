@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-08-09",
+  "scope": "local structure, O6U identity/precuration, self-redocking, deterministic PLIP, and PyMOL figure QA",
+  "environment_path_outside_project": "C:/Users/fsy/AppData/Local/CodexEnvs/ssc_docking_20260809",
+  "python": "3.12.5",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "rdkit": "2026.03.3",
+    "meeko": "0.7.1",
+    "gemmi": "0.7.3",
+    "pdb2pqr": "3.7.1",
+    "propka": "3.5.1",
+    "plip": "3.0.1",
+    "openbabel_conda_package": "3.1.1",
+    "openbabel_runtime": "3.1.0"
+  },
+  "executables": {
+    "autodock_vina": {
+      "version": "1.2.7",
+      "path_outside_project": "C:/Users/fsy/AppData/Local/CodexTools/autodock-vina/1.2.7/vina_1.2.7_win.exe",
+      "sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5"
+    },
+    "pymol": {
+      "version_tuple": ["3.1.1", 3.0, 3000000, 1731440170, "c79088a4ca8cb9ef5a348002dffbaac0aa338c16", 0],
+      "path_outside_project": "C:/Users/fsy/AppData/Local/Schrodinger/PyMOL2/Scripts/pymol.exe",
+      "sha256": "f24d102084620e54fe68d07f6e9169118b283f8d33d0c8f4b974c2e05a306059",
+      "headless_invocation": "pymol.exe -cq <generated.pml>",
+      "gui_launcher_prohibited_for_automation": "PyMOLWin.exe detaches before ray-traced output completion and can create a false missing-output failure."
+    },
+    "plip": {
+      "version": "3.0.1",
+      "environment_path_outside_project": "C:/Users/fsy/AppData/Local/CodexTools/plip-3.0.1",
+      "python_sha256": "8d66e60a031f65b88158b2c25a3b7cf2c0b4b160488be75c89f45fee28d10189",
+      "required_environment": {
+        "PATH_prepend": "C:/Users/fsy/AppData/Local/CodexTools/plip-3.0.1/Library/bin",
+        "BABEL_LIBDIR": "C:/Users/fsy/AppData/Local/CodexTools/plip-3.0.1/Library/bin",
+        "BABEL_DATADIR": "C:/Users/fsy/AppData/Local/CodexTools/plip-3.0.1/Library/share/openbabel"
+      }
+    }
+  },
+  "local_failures": {
+    "plip_native_structure": {
+      "status": "resolved_locally",
+      "resolution": "An isolated conda PLIP/Open Babel environment was used with explicit plugin and data directories. Two single-threaded no-reprotonation runs gave byte-identical text reports and identical canonically sorted O6U interaction records.",
+      "audit_record": "docking_native_redock/plip_native/PLIP_REPRODUCIBILITY_AUDIT.json"
+    },
+    "gromacs": {
+      "status": "not_installed_locally",
+      "disposition": "Use the exact server environment only after environment and canary gates pass."
+    },
+    "ffparam_qm": {
+      "status": "not_available_locally",
+      "official_download": "https://ffparam.silcsbio.com/download.php",
+      "official_manual": "https://ffparam.silcsbio.com/manual/",
+      "access_note": "The official download requires a separate FFParam registration; CHARMM-GUI credentials were not reused or tested against that service.",
+      "disposition": "Obtain the official licensed release, then perform CGenFF/FFParam targeted QM validation on a CPU-capable server before PDB Reader/Quick Bilayer approval."
+    }
+  },
+  "secrets": {
+    "project_contains_credentials_or_token": false,
+    "note": "CHARMM-GUI bearer material is stored outside the project with user-only ACL and is never written to audit records."
+  }
+}

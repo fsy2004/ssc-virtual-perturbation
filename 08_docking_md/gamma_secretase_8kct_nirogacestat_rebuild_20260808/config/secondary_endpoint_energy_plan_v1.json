@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "o6u_secondary_endpoint_energy_v2_20260822",
+  "status": "frozen_before_endpoint_energy_results_sensitivity_withdrawn",
+  "role": "secondary_exploratory_endpoint_energy",
+  "amendment": "MMGBSA_PBSA_SECONDARY_ANALYSIS_SENSITIVITY_WITHDRAWAL_20260822.md",
+  "supersedes_amendment": "MMGBSA_PBSA_SECONDARY_ANALYSIS_AMENDMENT_20260818.md",
+  "release_archive_sha256": "5a421f28afee664b5a8919db5f415f1205f35200950117bb3a67fceaba544a98",
+  "production_tpr_release_sha256": "a6e41f920f5af4860b7452c4cbdb2afeed8243bf65fb23b4fd6730e3ebbca4aa",
+  "realizations": ["rep01", "rep02", "rep03"],
+  "interim_rep01_allowed": false,
+  "formal_all_three_required": true,
+  "sampling": {
+    "window_ns": [200.0, 500.0],
+    "stratum_width_ns": 1.0,
+    "selection": "nearest_to_stratum_midpoint_ties_earlier",
+    "first_midpoint_ns": 200.5,
+    "last_midpoint_ns": 499.5,
+    "frames_per_realization": 300,
+    "fixed_blocks_ns": [[200.0, 260.0], [260.0, 320.0], [320.0, 380.0], [380.0, 440.0], [440.0, 500.0]]
+  },
+  "groups": {
+    "ligand": "neutral_76_atom_O6U",
+    "receptor": "gamma_secretase_protein_plus_covalent_glycans_plus_3_CLR_plus_2_PC1_DSPC",
+    "strip": "bulk_POPC_water_Na_Cl"
+  },
+  "trajectory": {
+    "single_trajectory_protocol": true,
+    "membrane_normal_axis": "z",
+    "membrane_midplane_z_angstrom": 0.0,
+    "pbc_distance_invariance_tolerance_nm": 0.01,
+    "raw_trajectory_immutable": true
+  },
+  "software": {
+    "target_gmx_mmpbsa_version": "1.6.5",
+    "isolated_environment_required": true,
+    "three_frame_canary_required": true,
+    "capture_versions_environment_commands_logs_and_hashes": true
+  },
+  "pb_primary": {
+    "memopt": 1,
+    "emem": 7.0,
+    "indi": 4.0,
+    "exdi": 80.0,
+    "istrng_molar": 0.15,
+    "poretype": 1,
+    "mctrdz_angstrom": 0.0,
+    "mthick_rule": "across_realization_median_of_fixed_window_median_leaflet_phosphate_plane_separation_angstrom"
+  },
+  "models_to_run": ["PB_membrane_indi4"],
+  "withdrawn_sensitivity_models_not_run": ["PB_membrane_indi1", "GB_OBC2", "GB_Neck2"],
+  "sensitivity_withdrawal_reason": "withdrawn_before_formal_endpoint_energy_results_because_sensitivity_branches_add_low_interpretive_value_and_nonessential_compute_multiplicity",
+  "entropy": {
+    "interaction_entropy": false,
+    "c2_entropy": false,
+    "quasi_harmonic": false,
+    "normal_mode": false
+  },
+  "decomposition": {
+    "enabled": true,
+    "selection": "hash_pinned_native_PLIP_contact_set_only",
+    "descriptive_only": true,
+    "data_driven_residue_ranking": false
+  },
+  "inference": {
+    "frames_are_independent_units": false,
+    "frame_level_p_values": false,
+    "hierarchical_bootstrap_seed": 20260818,
+    "absolute_binding_free_energy_claim": false,
+    "affinity_potency_efficacy_claim": false,
+    "between_ligand_ranking": false
+  },
+  "execution_gate": {
+    "all_three_500ns_complete": true,
+    "all_required_integrity_pbc_membrane_and_energy_gates_passed": true,
+    "concurrent_with_production": false
+  }
+}
